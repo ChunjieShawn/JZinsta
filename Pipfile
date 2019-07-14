@@ -9,6 +9,9 @@ pylint = "*"
 [packages]
 django = "*"
 tree = "*"
+django-imagekit = "*"
+pillow = "*"
+channels = "*"
 
 [requires]
 python_version = "3.7"
