@@ -1,3 +1,8 @@
 <p> {{ object.title }} </p>
 
 <img src="/{{ object.image }}">
+
+<div>
+    <a href="{% url 'update_post' object.pk %}"> update title </a><br>
+    <a href="{% url 'delete_post' object.pk %}"> delete post </a>
+</div>

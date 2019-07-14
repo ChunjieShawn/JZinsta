@@ -18,12 +18,18 @@ from django.urls import path, include
 
 #from Insta.views import HelloDjango
 
-from Insta.views import PostView, PostDetail, HelloDjango
+from Insta.views import PostView, PostDetail, HelloDjango, PostCreateView, PostUpdateView, PostDeleteView
 
 urlpatterns = [
-    path('hello', HelloDjango.as_view(), name='helloD'),
+    path('hello', HelloDjango.as_view(), name='hello'),
 
     path('', PostView.as_view(), name='home'),
     #pk is the primary key of the model object
     path('post/<int:pk>/', PostDetail.as_view(), name='post_detail'),
+
+    path('make_post', PostCreateView.as_view(), name='make_post'),
+
+    path('update_post/<int:pk>/', PostUpdateView.as_view(), name='update_post'),
+
+    path('delete_post/<int:pk>/', PostDeleteView.as_view(), name='delete_post')
 ]
