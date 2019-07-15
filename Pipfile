@@ -12,6 +12,7 @@ tree = "*"
 django-imagekit = "*"
 pillow = "*"
 channels = "*"
+django-annoying = "*"
 
 [requires]
 python_version = "3.7"

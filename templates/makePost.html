@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <h1> New Post </h1>
 
 <!-- when you want to submit a file, 'multipart/form-data' is a attribute you need to provide here -->
@@ -9,3 +13,5 @@
     {{form.as_p}}
     <button type="submit"> Save </button>
 </form>
+
+{% endblock content %}
